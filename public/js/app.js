@@ -7,8 +7,8 @@ var p2 = document.getElementById('p2')
 form1.addEventListener('submit', (event) => {
     event.preventDefault()
     const location = input1.value1
-    p1=extContent='Loading something....'
-    p2=textContent=''
+    p1.textContent = 'Loading something....'
+    p2.textContent = ''
     console.log("location: " + input1.value)
     const http = 'http://tower1:3000/weather?address=' + input1.value
     console.log('http: ' + http)
