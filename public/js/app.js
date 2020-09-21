@@ -2,8 +2,8 @@ console.log('Client side javascript file is loaded!')
 
 const form1 = document.getElementById('form1')
 const input1 = document.getElementById('input1')
-const p1 = document.getElementById('p1')
-const p2 = document.getElementById('p2')
+var p1 = document.getElementById('p1')
+var const p2 = document.getElementById('p2')
 form1.addEventListener('submit', (event) => {
     event.preventDefault()
     const location = input1.value1
