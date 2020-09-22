@@ -10,7 +10,8 @@ form1.addEventListener('submit', (event) => {
     p1.textContent = 'Loading something....'
     p2.textContent = ''
     console.log("location: " + input1.value)
-    const http = 'http://tower1:3000/weather?address=' + input1.value
+    const http = '/weather?address=' + input1.value
+    // const http = 'http://tower1:3000/weather?address=' + input1.value
     console.log('http: ' + http)
     fetch(http).then((response) => {
         response.json().then((data) => {
